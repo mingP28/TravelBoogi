@@ -1,0 +1,43 @@
+.local-style {
+    background-color: rgba(169, 169, 169, 0.219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_icon {
+    margin-left: 30px;
+}
+
+.region-select {
+    padding: 10px 20px;
+    background-color: rgb(232, 232, 232);
+    color: rgb(68, 68, 68);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+.region-tab {
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    padding: 10px 20px; /* 내부 패딩 */
+  }
+  
+  .region-tab:hover {
+    background-color: #e0e0e0; /* 호버 시 배경 색상 변경 */
+  }
+  .logo2{
+    cursor: pointer;
+    margin-right: 150px;
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .user-icon2{
+    color: white;
+    margin-left: 190px;
+  }
+  .user-icon2:hover {
+    color: #b3b3b3;
+  }

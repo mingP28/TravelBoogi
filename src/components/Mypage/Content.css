@@ -1,0 +1,57 @@
+
+.header-content {
+    width: calc(100vw - 240px);
+    padding: 20px;
+    text-align: center;
+    color: #c386e1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    margin-top: 30px;
+    margin-right: 130px;
+  }
+
+  .header-card {
+    margin-top : 40px;
+    padding : 20px;
+    display: flex; /* Flexbox를 활성화 */
+    justify-content: center; /* 카드들을 가운데 정렬 */
+    gap: 50px; /* 카드 사이의 간격 */
+  }
+  .header-card1, .header-card2 {
+    width : 400px;
+    height : 400px;
+    text-align: center;
+    border-radius: 30px; /* 둥근 모서리 설정 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* 그림자 효과 */
+    overflow: hidden; /* 이미지가 둥근 모서리를 넘어가지 않도록 */
+  }
+  .header-card1{
+    background-color: #cce5ffc1; /* 배경색 설정 */
+  }
+  .header-card2{
+    background-color: #d1ccedb1; /* 배경색 설정 */
+  }
+  
+  .header-card1 img, .header-card2 img {
+    margin-top : 15px;
+    border-top-left-radius: 20px; /* 상단 왼쪽 모서리 둥글게 */
+    border-top-right-radius: 20px; /* 상단 오른쪽 모서리 둥글게 */
+    width: 90%;
+  }
+  
+  .card1-day, .card2-day {
+    text-align: center;
+    color: #333; /* 날짜 색상 */
+    margin: 10px 0; /* 마진으로 공간 추가 */
+  }
+  
+  .card1-country, .card2-country {
+    text-align: center;
+    font-weight: bold; /* 국가명 강조 */
+    color: #000000;
+    margin-bottom: 20px; /* 아래쪽에 마진 추가 */
+  }
+  

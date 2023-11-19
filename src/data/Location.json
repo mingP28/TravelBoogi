@@ -1,0 +1,21 @@
+[
+    { "id": "New York", "name": "뉴욕", "lon": -73.990494, "lat": 40.7569545, "currencyCode": "USD", "region": "북아메리카", "image": "/images/newyork.png"},
+    { "id": "Manhattan", "name": "맨해튼", "lon": -73.9712488, "lat": 40.7830603, "currencyCode": "USD", "region": "북아메리카", "image": "/images/manhattan.png" },
+    { "id": "Lasvegas", "name": "라스베이거스", "lon": -115.1398296, "lat": 36.1699412, "currencyCode": "USD", "region": "북아메리카", "image": "/images/lasvegas.png" },
+    { "id": "Losangeles", "name": "로스앤젤레스", "lon": -118.2436849, "lat": 34.0522342, "currencyCode": "USD", "region": "북아메리카", "image": "/images/losangeles.png" },
+    { "id": "Chicago", "name": "시카고", "lon": -87.6297982, "lat": 41.8781136, "currencyCode": "USD", "region": "북아메리카", "image": "/images/chicago.png" },
+    { "id": "Rio", "name": "리우데자네이루", "lon": -43.1728965, "lat": -22.9068467, "currencyCode": "BRL", "region": "남아메리카", "image": "/images/rio.png"},
+    { "id": "Mexico City", "name": "멕시코시티", "lon": -99.133208, "lat": 19.4326077, "currencyCode": "MXN", "region": "남아메리카", "image": "/images/mexicocity.png"},
+    { "id": "Paris", "name": "파리", "lon": 2.3522219, "lat": 48.856614, "currencyCode": "EUR", "region": "유럽", "image": "/images/paris.png" },
+    { "id": "Rome", "name": "로마", "lon": 12.4963655, "lat": 41.9027835, "currencyCode": "EUR", "region": "유럽", "image": "/images/rome.png" },
+    { "id": "London", "name": "런던", "lon": -0.1277583, "lat": 51.5073509, "currencyCode": "GBP", "region": "유럽", "image": "/images/london.png" },
+    { "id": "Vienna", "name": "빈", "lon": 14.550072, "lat": 47.516231, "currencyCode": "EUR", "region": "유럽", "image": "/images/vienna.png" },
+    { "id": "Cebu", "name": "세부", "lon": 123.8857747, "lat": 10.607936, "currencyCode": "PHP", "region": "동남아시아", "image": "/images/cebu.png" },
+    { "id": "Bangkok", "name": "방콕", "lon": 100.5540311, "lat": 13.7474567, "currencyCode": "THB", "region": "동남아시아", "image": "/images/bangkok.png" },
+    { "id": "Danang", "name": "다낭", "lon": 108.2021667, "lat": 16.0544068, "currencyCode": "VND", "region": "동남아시아", "image": "/images/danang.png" },
+    { "id": "Tokyo", "name": "도쿄", "lon": 139.6917064, "lat": 35.6894875, "currencyCode": "JPY", "region": "동북아시아", "image": "/images/tokyo.png" },
+    { "id": "Jeju", "name": "제주도", "lon": 126.5311884, "lat": 33.4996213, "currencyCode": "KRW", "region": "동북아시아", "image": "/images/jeju.png" },
+    { "id": "Shanghai", "name": "상하이", "lon": 121.473701, "lat": 31.230416, "currencyCode": "CNY", "region": "동북아시아", "image": "/images/shanghai.png" },
+    { "id": "Beijing", "name": "베이징", "lon": 116.4073954, "lat": 39.904211, "currencyCode": "CNY", "region": "동북아시아", "image": "/images/beijing.png" }
+  ]
+  

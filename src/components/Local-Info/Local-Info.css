@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.city-description {
+    /*background-color: rgb(144, 141, 141);*/
+    width: 430px;
+    text-align: center;
+}
+
+.city-imgcontainer {
+    /*background-color: rgb(218, 52, 52);*/
+    height: 450px;
+    padding-top: 50px;
+    margin-bottom: -50px;
+    margin-right: 20px;
+}
+
+.city-image {
+    width: 430px;
+    align-items: center;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: rgba(0, 101, 184, 0.216);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 60%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.sections-group {
+    /* background-color: aquamarine; */
+    width: 400px;
+}
+
+.section-mint {
+    background-color: #9bd7e5bb;
+    
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.section-orange {
+    background-color: #ecb466d3;
+    padding: 10px;
+    border-radius: 30px;
+}
+.button-local{
+    display : flex;
+    justify-content: center;
+    gap : 20px;
+}
+
+.button-schedule, .button-cancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ebebeb;
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button-schedule:hover {
+    background-color: #cecece;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.tem-min{
+    color: blue;
+}
+
+.tem-max{
+    color: red;
+}

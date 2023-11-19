@@ -1,0 +1,47 @@
+.sidebar {
+  width: 200px;
+  background-color: rgba(169, 169, 169, 0.219);
+  padding: 20px;
+  color: white;
+}
+
+.menu-title {
+  padding: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background-color: #c386e1;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 24px;
+}
+.menu-bottom{
+  height : 80%;
+  display: flex;
+  flex-direction: column; /*요소들을 세로로 나열*/
+  justify-content: space-between;
+}
+.menu-item {
+  color: white;
+  padding: 8px 0;
+  cursor: pointer;
+  background-color: #b5b5b5;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  font-size: 16px;
+}
+
+.menu-back {
+  color: white;
+  padding: 8px 0;
+  cursor: pointer;
+  background-color: #b5b5b5;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  font-size: 16px;
+}

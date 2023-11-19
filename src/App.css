@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+  font-family: 'NanumSquareB', Arial, sans-serif;
+  /*background-color: #f6f7f9;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  margin: 20px 10px;
+}
+.foot-container{
+  width : 100%;
+  position: relative;
+  float : left;
+}
+
+.main-info{
+  margin: 50px;
+  font-size: 20px;
+}

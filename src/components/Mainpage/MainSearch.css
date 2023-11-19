@@ -1,0 +1,39 @@
+ /*MainSearch.css*/
+.main-search-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-search-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.main-search-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+ .map-select-button-white {
+     color: white;
+ }
+ .search{
+     background-color: rgba(128, 128, 128, 0.5); /* semi-transparent gray */
+     border-radius: 10px; /* rounded corners */
+     padding: 20px; /* some padding around the search bar */
+     display: flex; /* to align children inline */
+     align-items: center; /* vertical alignment */
+     justify-content: space-between; /* space between search bar and icon */
+     max-width: 500px; /* maximum width of the search bar */
+     margin: auto; /* center the search bar */
+ }
