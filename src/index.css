@@ -10,6 +10,18 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+body::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #87cfebbe;
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 3px;
+  background-color: #ddd;
 }
 
 code {

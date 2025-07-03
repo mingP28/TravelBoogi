@@ -1,14 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
+    /*font-family: 'Arial', sans-serif;*/
     background-color: #fff;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .schedule-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
 .city-description {
@@ -26,60 +25,85 @@ body {
 }
 
 .city-image {
-    width: 430px;
+    margin-top: 38px;
+    margin-left: 10px;
+    width:410px;
+    height: 280px;
     align-items: center;
+    border-radius: 5px;
+}
+
+.city-kor {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: -18px;
+    color: #797979;
+}
+
+.city-info {
+    margin-top: -5px;
+    font-weight: 100 !important;
+    color: #333333;
+    /*letter-spacing: 0.5px; !* 자간 설정 *!*/
+    line-height: 20px; /* 행간 설정 */
+
 }
 
 .sections-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: rgba(0, 101, 184, 0.216);
-    border-radius: 30px;
+    background-color: rgba(189, 225, 253, 0.22);
+    border-radius: 25px;
     padding: 20px;
     max-width: 60%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.sections-group {
-    /* background-color: aquamarine; */
-    width: 400px;
+    margin-top: 135px;
+    margin-bottom: 10px;
 }
 
 .section-mint {
-    background-color: #9bd7e5bb;
-    
+    /*오른쪽 위*/
+    /*background-color: #9bd7e590;*/
     padding: 10px;
-    border-radius: 30px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .section-orange {
-    background-color: #ecb466d3;
+    background-color: rgba(191, 239, 183, 0.3);
+    border-radius: 10px;
+    margin-top: -20px;
     padding: 10px;
-    border-radius: 30px;
+    margin-left: 10px;
+
+
 }
 .button-local{
     display : flex;
     justify-content: center;
     gap : 20px;
+    margin-top: 20px;
+    font-family: 'NanumSquareB', Arial, sans-serif;
 }
 
-.button-schedule, .button-cancel {
+.button-schedule, .button-cancel3 {
     padding: 10px 20px;
     border: none;
-    border-radius: 30px;
-    background-color: #ebebeb;
+    border-radius: 10px;
+    background-color: #fafafa;
     color: #333;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    font-family: 'NanumSquareB', Arial, sans-serif;
 }
 
-.button-schedule:hover {
+.button-schedule:hover, .button-cancel3:hover {
     background-color: #cecece;
+    color: white;
 }
 
 .logo{
@@ -87,9 +111,44 @@ body {
 }
 
 .tem-min{
-    color: blue;
+    color: #76a3ff;
 }
 
 .tem-max{
-    color: red;
+    color: #ff7272;
+}
+
+.max-w-sm {
+    margin-top: 10px;
+}
+.mt-2 {
+    margin-top: 20px;
+}
+.mt-update{
+    font-size: 13px;
+    color: #4b4b4b;
+    margin-top: 18px;
+}
+
+.how{
+    font-size: 20px;
+}
+
+.map-f-image{
+    display: block;
+    width: 65%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    /*top: 50%;*/
+    transform: translateY(2%);
+}
+
+.weather{
+    background-color: rgba(185, 238, 255, 0.33);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }

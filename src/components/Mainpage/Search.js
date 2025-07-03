@@ -5,6 +5,7 @@ import locations from "../../data/Location.json";
 export const Search = ({ query, setQuery, onSearch }) => {
   const [searchTerm, setSearchTerm] = useState(query);
   const [filteredDestinations, setFilteredDestinations] = useState([]);
+  const [selectedItemIndex, setSelectedItemIndex] = useState(0); // Track selected item index
   const searchRef = useRef(null);
 
   useEffect(() => {
@@ -47,19 +48,26 @@ export const Search = ({ query, setQuery, onSearch }) => {
       );
     }
   };
-  const handelKeyPress = (event) => {
-    if(event.key === "Enter"){
-      const searchMatch = filteredDestinations.find((destination) => 
-      destination.name.toLowerCase() === searchTerm.toLowerCase());
 
-      if(searchMatch){
-        handleDestinationClick(searchMatch);
-      }else{
-        alert("검색어와 정확히 일치하는 결과가 없습니다. 검색어를 확인해주세요.");
+  const handleKeyDown = (event) => {
+    // Handle arrow key navigation
+    if (event.key === "ArrowUp") {
+      setSelectedItemIndex((prevIndex) =>
+        prevIndex === 0 ? prevIndex : prevIndex - 1
+      );
+    } else if (event.key === "ArrowDown") {
+      setSelectedItemIndex((prevIndex) =>
+        prevIndex === filteredDestinations.length - 1
+          ? prevIndex
+          : prevIndex + 1
+      );
+    } else if (event.key === "Enter") {
+      if (filteredDestinations.length > 0) {
+        const destination = filteredDestinations[selectedItemIndex];
+        handleDestinationClick(destination);
       }
     }
-
-  }
+  };
 
   const handleDestinationClick = (destination) => {
     setSearchTerm(destination.name);
@@ -74,19 +82,27 @@ export const Search = ({ query, setQuery, onSearch }) => {
         type="text"
         placeholder="어디로 여행가세요?"
         value={searchTerm}
-        onClick={handleInputClick} // 검색창을 클릭할 때 실행될 핸들러를 추가합니다.
+        onClick={handleInputClick}
         onChange={handleSearchChange}
-        onKeyPress = {handelKeyPress}
+        onKeyDown={handleKeyDown} // Handle keydown event
         className="search-input"
       />
       {filteredDestinations.length > 0 && (
-        <div className="search-results">
-          {filteredDestinations.map((destination, index) => (
-            <div key={index} onClick={() => handleDestinationClick(destination)} className="search-results-item">
-              {destination.name}
-            </div>
-          ))}
-        </div>
+        // Inside the return statement of your Search component
+      <div className="search-results">
+      {filteredDestinations.map((destination, index) => (
+        <div
+          key={index}
+          onClick={() => handleDestinationClick(destination)}
+          className={`search-results-item ${
+          index === selectedItemIndex ? "selected" : ""
+      }`}
+      >
+      {destination.name}
+    </div>
+  ))}
+</div>
+
       )}
     </div>
   );

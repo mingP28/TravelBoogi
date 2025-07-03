@@ -1,12 +1,14 @@
-// src/components/Local-Info/Map.js
 import React, { useState, useEffect } from 'react';
-import ReactMapGL, { Marker } from 'react-map-gl';
+import ReactMapGL from 'react-map-gl';
 import mapboxgl from 'mapbox-gl';
 import locations from '../../data/Location.json';
 import markerImage from './marker.png';
+import './Map.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Map = ({ region, onCitySelect }) => {
   const cityCoordinates = locations.map((loc) => ({
+    id: loc.id,
     name: loc.name,
     lon: loc.lon,
     lat: loc.lat,
@@ -15,11 +17,11 @@ const Map = ({ region, onCitySelect }) => {
   }));
 
   const regionCenters = {
-    북아메리카: { longitude: -101.0, latitude: 39.0 },
+    북아메리카: { longitude: -97.0, latitude: 39.0 },
     남아메리카: { longitude: -58.0, latitude: -12.0 },
     유럽: { longitude: 9.542, latitude: 47.390 },
-    동남아시아: { longitude: 105.2772, latitude: 12.5657 },
-    동북아시아: { longitude: 125.978, latitude: 35.5665 },
+    동남아시아: { longitude: 110.2772, latitude: 9.5657 },
+    동북아시아: { longitude: 128.978, latitude: 37.5665 },
   };
 
   const [viewport, setViewport] = useState({
@@ -30,31 +32,15 @@ const Map = ({ region, onCitySelect }) => {
     longitude: regionCenters[region].longitude,
   });
 
-  const [markers, setMarkers] = useState([]);
-
-  useEffect(() => {
-    const newMarkers = cityCoordinates.map((city) => (
-      <Marker key={city.name} longitude={city.lon} latitude={city.lat}>
-        <button
-          onClick={() => onCitySelect(city)}
-          style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
-        >
-          <img src={markerImage} alt={city.name} style={{ width: '44px', height: '44px' }} />
-        </button>
-      </Marker>
-    ));
-
-    setMarkers(newMarkers);
-  }, [cityCoordinates, onCitySelect]);
-
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/jsy0202/clovimo8i008401r63lhb8ayi',
+      style: 'mapbox://styles/jsy0202/clovhrnkw008301r60m04awwo',
       center: [regionCenters[region].longitude, regionCenters[region].latitude],
       zoom: 3.5,
       scrollZoom: false,
       accessToken: 'pk.eyJ1IjoianN5MDIwMiIsImEiOiJjbG9tZWE0M3Mwa3djMm1zNm16N3R2aGx4In0.lMK1bAKtFwCfwfvsYyTSIw',
+      attributionControl: false,
     });
 
     map.on('dblclick', (e) => {
@@ -70,14 +56,30 @@ const Map = ({ region, onCitySelect }) => {
       });
     });
 
+    cityCoordinates.forEach((city) => {
+      const el = document.createElement('div');
+      el.className = 'marker';
+      el.style.backgroundImage = `url(${markerImage})`;
+      el.style.width = '44px';
+      el.style.height = '44px';
+      el.style.backgroundSize = 'cover';
+
+      const marker = new mapboxgl.Marker(el)
+        .setLngLat([city.lon, city.lat])
+        .addTo(map);
+
+      el.addEventListener('click', () => onCitySelect(city));
+
+      el.style.top = '-16px';
+    });
+
     return () => map.remove();
   }, [region]);
 
   return (
-    <>
-      <div id="map" style={{ width: '100vw', height: '100vh' }} />
-      <ReactMapGL {...viewport}>{markers}</ReactMapGL>
-    </>
+    <div id="map" className="map-container">
+      <ReactMapGL {...viewport} />
+    </div>
   );
 };
 

@@ -8,18 +8,14 @@ import Signin from './components/Login-Signup/Signin';
 import Mypage from './components/Mypage/Mypage';
 import Timetable from './components/Timetable/Timetable';
 import Content from './components/Mypage/Content';
-import Header from './components/Mainpage/Header';
-import Card from './components/Mainpage/Card';
-import cardData from './data/CardData.json';
-import CountrySlider from './components/Mainpage/CountrySlider';
-import Location from './data/Location.json';
-import Footer from './components/Mainpage/Footer';
 import Calendar from './components/Timetable/Calendar';
 import Exchange from './components/Local-Info/Exchange';
 import Weather from './components/Local-Info/Weather';
 import LocalInfo from './components/Local-Info/Local-Info';
 import Local from './components/Local-Info/Local';
-import MainSearch from "./components/Mainpage/MainSearch";
+import Local_map from './components/Local-Info/Local-map';
+import MainScroll from './components/Mainpage/MainScroll';
+import Team from "./components/Mainpage/Team";
 
 function App() {
   return (
@@ -37,26 +33,12 @@ function App() {
           <Route path="/exchange" element={<Exchange />} />
           <Route path="/local-info" element={<LocalInfo />} />
           <Route path="/local" element={<Local />} />
+          <Route path="/local-map" element={<Local_map />} />
+          <Route path="/team" element={<Team />} />
 
           <Route path="/" element={
             <div className="App">
-              <Header />
-              <MainSearch />
-              <div className="main-info">
-                부기의 아이들 페이지에서는
-                이런 것들이 가능합니다!
-              </div>
-              <div className="card-container">
-                {cardData.map((card, index) => (
-                  <Card key={index} {...card} />
-                ))}
-              </div>
-              <div className="country-container">
-                <CountrySlider imageData={Location} />
-              </div>
-              <div className="foot-container">
-                <Footer />
-              </div>
+              <MainScroll/>
             </div>
           } />
 

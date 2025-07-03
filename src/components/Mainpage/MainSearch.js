@@ -11,7 +11,7 @@ const MainSearch = () => {
     const navigate = useNavigate();
 
     const handleMapSelectClick = () => {
-        navigate('/local'); // 절대 경로로 변경
+        navigate('/local-map'); // 절대 경로로 변경
     }
     const handleSearch = (searchTerm) => {
         const destination = locations.find((d) =>
@@ -19,18 +19,21 @@ const MainSearch = () => {
         );
         if (destination) {
             navigate(`/local?id=${encodeURIComponent(destination.id)}`);
-        }else {
+        } else {
             alert("검색어와 정확히 일치하는 결과가 없습니다. 검색어를 확인해주세요.");
         }
     };
     const handleSearchIconClick = () => {
-        if(query){
+        if (query) {
             handleSearch(query);
         }
     };
 
     return (
         <div className="main-search-container" style={{ backgroundImage: "url('/images/airplane.png')" }}>
+            <div className="main-search-title">
+                여행의 시작,<br></br><span style={{marginLeft: '-8px', fontSize: '70px', color: '#1f73c7'}}>트래블부기</span>
+            </div>
             <div className="search">
                 <div className="search-map">
                     <Search

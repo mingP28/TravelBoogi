@@ -1,0 +1,99 @@
+/* src/components/Mainpage/Team.css */
+.team {
+    height: 100vh;
+    margin-top: 0;
+}
+.team-title {
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: -20px;
+
+}
+
+.team_contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.team_member {
+    background-color: rgba(169, 169, 169, 0.219);
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.name {
+    margin-bottom: -20px;
+}
+h2 {
+    font-size: 24px; /* h2 태그의 폰트 크기 */
+}
+
+h3 {
+    font-size: 30px; /* h3 태그의 폰트 크기 */
+}
+
+.mem_des {
+    font-size: 20px; /* p 태그의 폰트 크기 */
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team_image {
+    width: 100%;
+}
+
+.img_ms, .img_sy, .img_cy, .img_gr {
+    width: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.img_sy, .img_gr {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.img_ms {
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.tbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-cancel {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 90px;
+    background-color:#fff;
+    color:#999999;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button-cancel:hover {
+    background-color: #999999;
+    color: #fff;
+}

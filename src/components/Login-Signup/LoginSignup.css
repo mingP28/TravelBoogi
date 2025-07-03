@@ -7,7 +7,8 @@
     background: #fff;
     padding-bottom: 30px;
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.1);
 }
 
 .header{
@@ -16,11 +17,11 @@
     align-items: center;
     gap: 9px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .text{
-    color: rgb(19, 38, 89);
+    color: rgb(168, 229, 239);
     font-size: 48px;
     font-weight: 700;
 }
@@ -39,27 +40,29 @@
     gap: 25px;
 }
 
-.input{
+.input {
+    border-radius: 10px;
     display: flex;
     align-items: center;
     margin: auto;
-    width: 450px;
-    height: 70px;
-    background: #eaeaea;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    border-radius: 40px;
+    width: 350px;
+    height: 43px;
+    background: #f3f1f1;
 }
 
-.input input{
+.custom-input::placeholder {
+    font-size: 12px;
+}
+
+  .input input {
     height: 50px;
-    width: 400px;
+    width: 250px;
     background: transparent;
     border: none;
     outline: none;
     color: #797979;
     font-size: 19px;
-}
+  }
 
 .submit-container{
     display: flex;
@@ -69,17 +72,18 @@
 }
 
 .submit1{
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
+    width: 350px;
+    height: 40px;
     color: white;
-    background: rgb(19, 38, 89);
-    border-radius: 50px;
-    font-size: 19px;
+    background: rgb(168, 229, 239);
+    font-size: 17px;
     font-weight: 700;
     cursor: pointer;
+    margin-top: 30px;
 }
     .submit1:hover {
         background: rgba(19, 38, 89, 0.853);
@@ -89,32 +93,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
-    color: #797979;
-    background: #eaeaea;
-    border-radius: 50px;
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 12px;
     cursor: pointer;
 }
     .submit2:hover {
-        background: #d3d3d3;
+        background: #ececec;
     }
 .divider {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px 0;
-  }
-  
-.divider span {
-    padding: 0 10px;
-    font-size: 14px;
-    color: #797979;
+    text-align: center;
+    color: rgb(120, 119, 119);
 }
-  
+
 .custom-input {
     margin-left: 10px;
 }
   
+.login-image {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.naver, .google{
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.kakao {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+}
+.apple {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 57px;
+    height: 40px;
+}
+.naver:hover, .kakao:hover, .google:hover, .apple:hover {
+
+}

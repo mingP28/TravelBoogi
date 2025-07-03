@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer">
             <div className="footer-top">
                 <div className="footer-team">
-                    <div className="footer-title">부기의 i들</div>
+                    <div className="footer-title">트래블부기</div>
                     <div>여행지</div>
                     <div>일정만들기</div>
                     <div>Q&A</div>

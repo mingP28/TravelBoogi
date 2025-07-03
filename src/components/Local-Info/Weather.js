@@ -1,5 +1,10 @@
 //src/components/Local-Info/Weather.js
 import React, { useState, useEffect } from "react";
+import { MdWbSunny } from "react-icons/md";
+import { FaTemperatureArrowDown } from "react-icons/fa6";
+import { FaTemperatureArrowUp } from "react-icons/fa6";
+import { BsCloudSunFill } from "react-icons/bs";
+
 
 const Weather = ({city, apiKey}) => {
 
@@ -23,29 +28,43 @@ const Weather = ({city, apiKey}) => {
             }
         };
 
-    fetchWeatherData();
-  }, [city.lat, city.lon, apiKey]);
+        fetchWeatherData();
+    }, [city.lat, city.lon, apiKey]);
 
-  useEffect(() => {
-    console.log('Weather data:', weatherData);
-  }, [weatherData]);
+    useEffect(() => {
+        console.log('Weather data:', weatherData);
+    }, [weatherData]);
 
-  if (!weatherData) {
-    return <div>Loading...</div>;
-  }
+    if (!weatherData) {
+        return <div>Loading...</div>;
+    }
 
-  const celsiusTemperature = (weatherData.main.temp - 273.15).toFixed(1); // 절대온도에서 섭씨온도로
-  const celsiusTemperatureMin = (weatherData.main.temp_min - 273.15).toFixed(1);
-  const celsiusTemperatureMax = (weatherData.main.temp_max - 273.15).toFixed(1);
+    const celsiusTemperature = (weatherData.main.temp - 273.15).toFixed(1); // 절대온도에서 섭씨온도로
+    const celsiusTemperatureMin = (weatherData.main.temp_min - 273.15).toFixed(1);
+    const celsiusTemperatureMax = (weatherData.main.temp_max - 273.15).toFixed(1);
 
     return (
+        <>
         <div className="section-mint">
-            <h2>{city.name}의 날씨 정보</h2>
-            <p className="tem">현재 기온: {celsiusTemperature} 도</p>
-            <p className="tem-min">최저 기온: {celsiusTemperatureMin} 도</p>
-            <p className="tem-max">최고 기온: {celsiusTemperatureMax} 도</p>
-            <p className="now-weather">현재 날씨: {weatherData.weather[0].description}</p>
+            <h2 className="city-kor">{city.name}</h2>
+            <h2 className="city-eng" >{city.id}</h2>
+            <div className="city-info">{city.description}</div>
         </div>
+            <div className="weather">
+            <p>
+                <MdWbSunny />
+                <span className="tem">&nbsp; 현재 기온: {celsiusTemperature}도 &nbsp;</span>
+                <BsCloudSunFill />
+                <span className="now-weather">&nbsp;현재 날씨: {weatherData.weather[0].description}</span>
+            </p>
+            <p>
+                <FaTemperatureArrowDown />
+                <span className="tem-min">&nbsp; 최저 기온: {celsiusTemperatureMin}도 &nbsp;</span>
+                <FaTemperatureArrowUp />
+                <span className="tem-max">&nbsp; 최고 기온: {celsiusTemperatureMax}도</span>
+            </p>
+            </div>
+        </>
     );
 };
 

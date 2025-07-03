@@ -1,39 +1,70 @@
  /*MainSearch.css*/
-.main-search-container {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ .main-search-container {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 
-.main-search-input {
-    width: 50%;
-    padding: 10px;
-    font-size: 1rem;
-}
+ .main-search-input {
+     width: 50%;
+     padding: 20px;
+     font-size: 1rem;
+ }
 
-.main-search-button {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 10px;
-}
+ .main-search-button {
+     padding: 10px 10px;
+     background-color: #ffffff;
+     border: none;
+     cursor: pointer;
+     font-size: 3rem;
+     margin-left: 10px;
+ }
+
+ .map-select-button {
+     margin-left: 400px;
+     font-family: 'NanumSquareB', Arial, sans-serif;
+ }
+
  .map-select-button-white {
      color: white;
  }
- .search{
-     background-color: rgba(128, 128, 128, 0.5); /* semi-transparent gray */
-     border-radius: 10px; /* rounded corners */
-     padding: 20px; /* some padding around the search bar */
-     display: flex; /* to align children inline */
-     align-items: center; /* vertical alignment */
-     justify-content: space-between; /* space between search bar and icon */
-     max-width: 500px; /* maximum width of the search bar */
-     margin: auto; /* center the search bar */
+
+ .search {
+     background-color: rgba(89, 88, 89, 0);
+     border-radius: 5px;
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     max-width: 1000px;
+     width: 40%;
+     margin-left: 180px;
+     position: absolute;
+     left: 20px;
+     bottom: 20%;
+     transform: translateY(-40px);
+ }
+
+ .search-icon {
+     margin-bottom: 16px;
+ }
+
+ .main-search-title { /* 여행의 시작 부분 */
+     position: absolute;
+     left: 210px;
+     bottom: 55%;
+     transform: translateY(-40px);
+     font-size: 40px;
+     font-weight: bold;
+     text-align: center;
+     color: white;
+     width: 50%;
+     text-align: left;
+     margin-bottom: -100px;
+     margin-left: 140px;
  }

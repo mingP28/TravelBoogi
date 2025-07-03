@@ -1,0 +1,72 @@
+.list-container{
+    display : grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 16px;
+    margin-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom : 50px;
+}
+.list-items{
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    position: relative;
+}
+.list-items:hover {
+    transform: scale(1.05); /* 이미지를 약간 확대 */
+}
+.list-image{
+    width : 85%;
+    height: auto;
+    margin-top : 20px;
+    border-radius: 30px;
+    box-shadow: 8px 9px 10px rgba(0, 0, 0, 0.1);
+}
+.list-image:hover{
+    cursor : pointer;
+}
+.list-items:hover .image-description {
+    display: flex; /* 이미지에 마우스를 올렸을 때 설명을 표시 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+.image-description {
+    display: none; /* 기본적으로 숨김 */
+    position: absolute;
+    top: 20px; /* 이미지 상단에 위치 */
+    left: 22px; /* 이미지 왼쪽에 위치 */
+    right:0; /* 이미지 오른쪽에 위치 */
+    bottom: 0; /* 이미지 하단에 위치 */
+    width: 78.5%; /* 부모 요소인 .list-items의 너비에 맞춤 78*/
+    height: 59%; /* 부모 요소인 .list-items의 높이에 맞춤 56.5*/
+    border-radius: 35px; /* .list-image의 border-radius와 동일하게 */
+    background-color: rgba(51, 50, 50, 0.7); /* 반투명 검은색 배경 */
+    color: #fff; /* 텍스트 색상은 흰색 */
+    padding: 10px; /* 내부 여백 설정 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    font-size: 14px; /* 폰트 크기 설정 */
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
+    letter-spacing: 0.5px; /* 자간 설정 */
+    line-height: 17px; /* 행간 설정 */
+}
+.list-title-eng{
+    margin : 10px 0px;
+}
+.list-title-kor{
+    margin-top : 0px;
+    margin-bottom : 20px;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+.heart-icon {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 24px;
+    color: #ddd; /* 기본 색상 */
+    cursor: pointer;
+}
+.heart-icon.favorite {
+    color: #ff4343; /* 클릭 시 색상 */
+}

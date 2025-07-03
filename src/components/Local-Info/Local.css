@@ -1,43 +1,106 @@
 .local-style {
-    background-color: rgba(169, 169, 169, 0.219);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.search_icon {
-    margin-left: 30px;
+  background-color: rgba(231, 231, 231, 0.92);
+  max-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+
 }
 
+.navbar2{
+  font-weight : bold;
+  list-style-type: none;
+  box-sizing: border-box;
+  display : flex;
+  gap : 20px;
+  /*align-items : center;*/
+  padding: 0;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.search-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -28px;
+}
+
+.search-icon2 {
+  width: 30px;
+  height: 100px;
+  margin-right: 30px;
+  margin-top: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.list-search {
+  margin: 20px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.map-select-button {
+  color: rgb(38, 37, 37);
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.world-map{
+  margin-top: 90px;
+}
+.world-list{
+  text-align: center;
+}
 .region-select {
-    padding: 10px 20px;
-    background-color: rgb(232, 232, 232);
-    color: rgb(68, 68, 68);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
+  max-width: 60%;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #fbbb67b1;
+  color: rgb(68, 68, 68);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
 }
-.region-tab {
-    cursor: pointer; /* 마우스 오버 시 커서 변경 */
-    padding: 10px 20px; /* 내부 패딩 */
-  }
-  
-  .region-tab:hover {
-    background-color: #e0e0e0; /* 호버 시 배경 색상 변경 */
-  }
-  .logo2{
-    cursor: pointer;
-    margin-right: 150px;
-    width: 150px;
-    height: 100px;
-    object-fit: contain;
-  }
 
-  .user-icon2{
-    color: white;
-    margin-left: 190px;
-  }
-  .user-icon2:hover {
-    color: #b3b3b3;
-  }
+.region-tab {
+  cursor: pointer;
+  /* 마우스 오버 시 커서 변경 */
+  padding: 10px 20px;
+  /* 내부 패딩 */
+}
+.region-tab:hover {
+  color: white;
+}
+
+.site-name-h11 {
+  font-size: 24px;
+  margin-top: 35px;
+  margin-left: -140px;
+  margin-right: 70px;
+  cursor: default;
+}
+
+.logo2 {
+  cursor: pointer;
+  margin-right: 150px;
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.user-icon2 {
+  color: #ffffff;
+  margin-left: 190px;
+}
+
+.user-icon2:hover {
+  color: rgb(77, 77, 77);
+}

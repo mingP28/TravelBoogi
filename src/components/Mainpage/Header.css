@@ -1,12 +1,12 @@
 #header-container {
     /* 상단바 */
-    position: relative;
+    position: fixed;
     width: 100%;
-    height: 100px;
+    height: 80px;
     margin: auto 0;
-    background-color: rgba(169, 169, 169, 0.219);
+    background-color: rgba(231, 231, 231, 0.92);
+    z-index: 1000;
 }
-
 .header-contents {
     /* 상단바의 내부요소 */
     display: flex;
@@ -19,46 +19,64 @@
 }
 
 .header-image {
-    /* 로고? */
-    width: 10%;
-    height: 90px;
-    text-align: center;
+    /* 로고 위치 */
+    height: 75px;
+    padding-right: -20px;
+    /*width: 10%;*/
+    /*height: 90px;*/
+    /*text-align: center;*/
 }
 
 .logo {
-    width: 150px;
-    height: 100px;
+    /* 로고 크기, 위치 */
+    width: 60px;
+    height: 80px;
     object-fit: contain;
 }
 
 .site-name h1 {
-    cursor: pointer;
+    cursor: default;
+    margin-left: -30px;
     /* 사이트로고 */
 }
 
 .navbar-local{
-    padding: 10px 20px;
-    background-color: white;
+    padding: 10px 10px;
+    background-color: transparent; /* 배경을 투명하게 설정 */
     color: rgb(68, 68, 68);
     border: none;
-    border-radius: 30px;
     cursor: pointer;
-    margin-left: -100px;
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 17px; /* 글자 크기 설정 */
+    font-weight: bold; /* 볼드체 설정 */
+    margin-left: 200px;
 }
-.navbar-local:hover {
-    background-color: #b3b3b3;
+.navbar-local:hover, .navbar-calender:hover, .navbar-airplane:hover, .user-icon:hover {
+    /*background-color: #87CEEB; !* 하늘색으로 변경 *!*/
+    color: #ffffff; /* 호버 시 텍스트 색상을 흰색으로 변경 */
 }
 .navbar-calender{
-    padding: 10px 20px;
-    background-color: white;
+    padding: 10px 10px;
+    background-color: transparent; /* 배경을 투명하게 설정 */
     color: rgb(68, 68, 68);
     border: none;
-    border-radius: 30px;
     cursor: pointer;
-    margin-left: -15px;
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 17px; /* 글자 크기 설정 */
+    font-weight: bold; /* 볼드체 설정 */
+
 }
-.navbar-calender:hover {
-    background-color: #b3b3b3;
+
+.navbar-airplane{
+    padding: 10px 10px;
+    background-color: transparent; /* 배경을 투명하게 설정 */
+    color: rgb(68, 68, 68);
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 17px; /* 글자 크기 설정 */
+    font-weight: bold; /* 볼드체 설정 */
+
 }
 
 .navbar{
@@ -67,9 +85,10 @@
     box-sizing: border-box;
     display : flex;
     gap : 20px;
-    align-items : center;
+    /*align-items : center;*/
     padding: 0;
     text-decoration: none;
+
 }
 
 .search {
@@ -79,6 +98,9 @@
 }
 .search-icon{
     cursor : pointer;
+    /*추가*/
+    width: 30px;
+    height: 100px;
 }
 .search-map {
     display: inline-flex;
@@ -90,9 +112,10 @@
 .map-select-button {
     cursor: pointer;
     border: none;
-    color: gray;
+    color: rgb(61, 59, 59);
     background-color: rgba(0, 0, 0, 0);
-    margin-left: 200px;
+    margin-left: 400px;
+    /*마진 늘림*/
     margin-top: -25px;
 }
 
@@ -106,22 +129,31 @@
     cursor: pointer;
     width: 20%;
     padding: 20px 0;
-    color: white;
+    color: rgb(77, 77, 77);
 }
 
-.user-icon:hover {
-    color: #b3b3b3;
+.user-icon {
+    margin-left: -80px;
 }
 
 .button {
-    padding: 10px 20px;
-    background-color: white;
+    padding: 10px 15px;
+    background-color: #b5b5b56a;
     color: rgb(68, 68, 68);
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
+    margin-right: -35px;
+    font-family: 'NanumSquareB', Arial, sans-serif;
 }
 
 .button:hover {
-    background-color: #b3b3b3;
+    background-color: white;
+    color: rgb(68, 68, 68);
+}
+
+/*사이트 이름 추가*/
+.site-name{
+    padding-right: 300px;
+    font-size: 12px;
 }
