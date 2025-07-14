@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# ✈️ TravelBoogi
+여행지 추천부터 일정 관리까지 제공하는 사용자 맞춤형 여행웹
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👩‍🏫 프로젝트 소개
+TravelBoogi는 사용자가 여행지를 선택하고 일정을 관리할 수 있도록 돕는 React 기반 여행 플랫폼입니다.
 
-## Available Scripts
+## 개발 기간
+2023.10 ~ 2023.11(약 2달)
 
-In the project directory, you can run:
+## ✨ 주요 기능
+1. 여행지 검색 및 선택
+   - 검색창에 여행지를 입력하거나 지도를 통해 선택 가능
+   - 추천 여행지를 통해 사용자의 선택을 용이하게 함
+2. 여행지 상세 페이지
+   - 여행지 선택 시, 각 나라의 기본 정보 페이지로 이동
+   - 국가의 기본 정보, 현재 날씨, 환율 정보 제공
+   - "일정 만들기" 버튼을 클릭 시, 여행 기간을 선택할 수 있는 페이지로 이동
+3. 일정 관리
+   - 여행 기간을 설정하면 타임테이블 페이지로 이동
+   - 드래그 앤 드롭 방식으로 추가/삭제 가능
+4. 마이페이지
+   - 사용자가 선택한 여행 일정과 찜한 국가 목록 확인
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 개발 환경 및 기술 스택
+- 개발 툴 : VSCode
+- Frontend : React
+- 외부 API : OpenWheather API
+- 주요 라이브러리 : react-map-gl react-slick react-datepicker daypilot
