@@ -7,10 +7,19 @@ TravelBoogi는 사용자가 여행지를 선택하고 일정을 관리할 수 �
 ## 🕰️ 개발 기간
 2023.10 ~ 2023.11(약 2달)
 
-## ✨ 주요 기능
+## 🧑‍🤝‍🧑 팀원 소개
+<img width="1079" height="372" alt="image" src="https://github.com/user-attachments/assets/9b541d23-ff51-40c3-ada6-67c837eaaf63" />
+
+## ⚙️ 개발 환경 및 기술 스택
+- 개발 툴 : VSCode
+- Frontend : React
+
+## ✨ 페이지별 주요 기능
 1. 여행지 검색 및 선택
    - 검색창에 여행지를 입력하거나 지도를 통해 선택 가능
    - 추천 여행지를 통해 사용자의 선택을 용이하게 함
+![Animation](https://github.com/user-attachments/assets/c933115f-4329-4566-85e4-97019b4183be)
+
 2. 여행지 상세 페이지
    - 여행지 선택 시, 각 나라의 기본 정보 페이지로 이동
    - 국가의 기본 정보, 현재 날씨, 환율 정보 제공
@@ -21,8 +30,8 @@ TravelBoogi는 사용자가 여행지를 선택하고 일정을 관리할 수 �
 4. 마이페이지
    - 사용자가 선택한 여행 일정과 찜한 국가 목록 확인
 
-## 개발 환경 및 기술 스택
-- 개발 툴 : VSCode
-- Frontend : React
-- 외부 API : OpenWheather API
-- 주요 라이브러리 : react-map-gl react-slick react-datepicker daypilot
+
+
+
+
+
