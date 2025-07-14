@@ -34,6 +34,7 @@ TravelBoogi는 사용자가 여행지를 선택하고 일정을 관리할 수 �
    - 여행 기간을 설정하면 타임테이블 페이지로 이동
    - 드래그 앤 드롭 방식으로 추가/삭제 가능
 <img width="2599" height="1410" alt="image" src="https://github.com/user-attachments/assets/dafcbc5f-7791-4494-8242-3c07bd4ddbe6" />
+<img width="2599" height="1410" alt="image" src="https://github.com/user-attachments/assets/e8328e45-710f-4eeb-a720-91f152740376" />
 
 ### 4. 마이페이지
    - 사용자가 선택한 여행 일정과 찜한 국가 목록 확인
